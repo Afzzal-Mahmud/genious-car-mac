@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "Car-Mac-One",
+        "img-src" : "https://i.ibb.co/nkfx2fX/1.jpg",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam a veritatis voluptas laudantium! Sequi excepturi quam ex quidem facere soluta quia dolorum eligendi cumque in non atque, temporibus obcaecati."
+    },
+    {
+        "name" : "Car-Mac-Two",
+        "img-src" : "https://i.ibb.co/BnR3yDR/3.jpg",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam a veritatis voluptas laudantium! Sequi excepturi quam ex quidem facere soluta quia dolorum eligendi cumque in non atque, temporibus obcaecati."
+    },
+    {
+        "name" : "Car-Mac-Three",
+        "img-src" : "https://i.ibb.co/ccgRrDS/4.jpg",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam a veritatis voluptas laudantium! Sequi excepturi quam ex quidem facere soluta quia dolorum eligendi cumque in non atque, temporibus obcaecati."
+    },
+    {
+        "name" : "Car-Mac-Four",
+        "img-src" : "https://i.ibb.co/xgT0r9Z/5.jpg",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam a veritatis voluptas laudantium! Sequi excepturi quam ex quidem facere soluta quia dolorum eligendi cumque in non atque, temporibus obcaecati."
+    },
+    {
+        "name" : "Car-Mac-Five",
+        "img-src" : "https://i.ibb.co/rxpMHvW/6.jpg",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam a veritatis voluptas laudantium! Sequi excepturi quam ex quidem facere soluta quia dolorum eligendi cumque in non atque, temporibus obcaecati."
+    },
+    {
+        "name" : "Car-Mac-Six",
+        "img-src" : "https://i.ibb.co/W3R5Zjd/mechanic-3.jpg",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam a veritatis voluptas laudantium! Sequi excepturi quam ex quidem facere soluta quia dolorum eligendi cumque in non atque, temporibus obcaecati."
+    }
+]

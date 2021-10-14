@@ -1,0 +1,12 @@
+console.log(process.env);
+const firebaseConfig = {
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_BUCKET,
+    storageBucket: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    messagingSenderId: process.env.REACT_APP_FIREBASE,
+    appId: process.env.REACT_APP_FIREBASE_APPID,
+
+  };
+
+  export default firebaseConfig;
