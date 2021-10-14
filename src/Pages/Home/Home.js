@@ -4,9 +4,11 @@ import { Carousel } from "react-bootstrap";
 import carMacOne from "../../banner/banner1.jpg"
 import carMacTwo from "../../banner/banner2.jpg"
 import carMacThree from "../../banner/banner3.jpg"
+import Services from "../Services/Services";
 
 function Home() {
     return (
+        <>
         <Carousel>
             <Carousel.Item>
                 <img
@@ -44,6 +46,10 @@ function Home() {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+        
+            <Services></Services>
+        
+        </>
     )
 }
 export default Home;
