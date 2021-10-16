@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-function useUsers() {
-    const [users,setUsers] = useState({})
-    return {users,setUsers}
+function useUser() {
+    const [user,setUser] = useState({})
+    return {user,setUser}
 }
-export default useUsers;
+export default useUser;

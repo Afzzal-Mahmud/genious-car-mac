@@ -1,18 +1,43 @@
+import { useEffect } from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+// import useEmailAndPassword from "../Mathods/useEmailAndPassword"
 import useGoogleSignIn from "../Mathods/useGoogleLogIn";
-import useUsers from "./useUser";
+// import useSignOut from "../Mathods/useSignOut";
+import useUser from "./useUser";
 
 initializeAuthentication()
 
 function useFirebase() {
-    /* this user is a custom hook for setting user */
-    const {users,setUsers} = useUsers()
+    /* users is a custom hook for setting user */
+    const {user,setUser} = useUser()
     const {signInUsingGoogle} = useGoogleSignIn()
-    const {logOut} = useSignOut()
+    // const {logOut} = useSignOut()
+    // const {logInUsingEmail} = useEmailAndPassword()
+
+    const auth = getAuth()
+
+    function logOut() { 
+        
+        signOut(auth)
+        .then(()=>{
+            console.log('inside the logOut')
+            setUser({})
+         })
+        
+    }
+
+    useEffect(()=>{
+        onAuthStateChanged(auth,user => {
+            if(user){
+                setUser(user)
+            }
+        })
+    },[user])
 
     return {
-        users,
-        setUsers,
+        user,
+        setUser,
         signInUsingGoogle,
         logOut
     }

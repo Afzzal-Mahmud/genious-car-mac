@@ -1,8 +1,11 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useFirebase from "../../Hooks/useFirebase";
 
 function Header() {
+    const {user , logOut} = useFirebase();
+    console.log(logOut,'on header', user?.displayName)
     return (
         <Navbar className='py-4' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
@@ -13,13 +16,17 @@ function Header() {
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} to="/home#services">Services</Nav.Link>
                         <Nav.Link as={Link} to="#macanic">Macanic</Nav.Link>
-                        <Nav.Link as={Link} to="/login">LogIn</Nav.Link>
-                    </Nav>
-                    <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
+                        
+                        {user?.email ?
+                        <Nav>  
+                            <button onClick={logOut}>Log Out</button>
+                        </Nav>
+
+                       : <Nav.Link as={Link} to="/login"> 
+                               <button>Log In</button>    
                         </Nav.Link>
+                        }
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
