@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function ServicesCard({serviceObject}) {
     const {name, imgSrc, description} = serviceObject;
@@ -13,7 +14,7 @@ function ServicesCard({serviceObject}) {
                 <Card.Text>
                     {description}
                 </Card.Text>
-                <Button variant="primary">See Details</Button>
+                <Link to='/login'><Button variant="primary">Talk With Exparts</Button></Link>
             </Card.Body>
         </Card>
         </Col>
