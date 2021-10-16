@@ -3,11 +3,11 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 import { Button, Container, Form } from "react-bootstrap";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import useFirebase from "../../Hooks/useFirebase";
+import useAuth from "../../Hooks/useAuth";
 // import useEmailAndPassword from "../../Mathods/useEmailAndPassword";
 
 function LogInForm() {
-    const {signInUsingGoogle,setUser} = useFirebase()
+    const {signInUsingGoogle,setUser} = useAuth()
     // const [email,setEmail] = useState('')
     // const [password,setPassword] = useState('')
     const [isLogIn,setIsLogIn] = useState(false)
